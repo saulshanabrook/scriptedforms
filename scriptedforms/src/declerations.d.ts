@@ -1,0 +1,2 @@
+declare module 'style-loader!*' {
+}

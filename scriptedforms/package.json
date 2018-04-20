@@ -11,7 +11,7 @@
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "main": "src/main.ts",
+  "main": "out-tsc/app/main.js",
   "description": "Interactive forms.",
   "author": "Simon Biggs",
   "scripts": {
@@ -35,7 +35,7 @@
     "watch": "webpack --config webpack.dev.js --watch"
   },
   "files": [
-    "src/**/*.{d.ts,ts,eot,gif,html,css,jpg,js,js.map,json,png,svg,woff2,ttf,scss}"
+    "out-tsc/app/"
   ],
   "dependencies": {
     "@angular/animations": "5.2.5",
@@ -72,7 +72,9 @@
     "json-stable-stringify": "^1.0.1",
     "markdown-it": "^8.4.0",
     "material-design-icons": "^3.0.1",
+    "node-sass": "4.8.3",
     "rxjs": "^5.5.0",
+    "sass-loader": "7.0.1",
     "uuid": "^3.2.1",
     "zone.js": "^0.8.4"
   },
@@ -82,15 +84,13 @@
     "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^3.4.1",
     "codelyzer": "^4.2.1",
-    "copyfiles": "^1.2.0",
+    "copyfiles": "2.0.0",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.7",
     "html-loader": "^0.5.5",
     "karma": "^2.0.0",
-    "node-sass": "^4.5.3",
     "rimraf": "^2.6.1",
-    "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
     "svg-inline-loader": "^0.8.0",
     "svg-url-loader": "^2.3.1",
